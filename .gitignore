@@ -1,0 +1,41 @@
+# Dependencies and builds
+node_modules/
+dist/
+target/
+outputs/
+apps/desktop/src-tauri/gen/
+# Local tools, provider diagnostics, credentials and personal state
+.toolchains/
+.local/
+.env
+.env.*
+!.env.example
+*.sqlite
+*.sqlite3
+*.sqlite3-*
+*.db
+*.db-*
+*.pem
+*.key
+*.p12
+*.pfx
+# Generated caches and machine metadata
+.DS_Store
+._*
+*.log
+__pycache__/
+*.pyc
+.ruff_cache/
+.pytest_cache/
+coverage/
+test-results/
+playwright-report/
+# Historical private planning document
+OMNI_Implementation_Plan.md
+
+# Generated icon variants for unsupported platforms
+apps/desktop/src-tauri/icons/android/
+apps/desktop/src-tauri/icons/ios/
+apps/desktop/src-tauri/icons/Square*.png
+apps/desktop/src-tauri/icons/StoreLogo.png
+apps/desktop/src-tauri/icons/icon.ico

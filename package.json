@@ -1,0 +1,49 @@
+{
+  "name": "iris-prototype",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/desktop",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "vite --config apps/desktop/vite.config.ts --host 127.0.0.1",
+    "build": "npm run typecheck && vite build --config apps/desktop/vite.config.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:policy": "python3 -m unittest discover -s tests -p 'test_*.py' -v",
+    "test:browser": "node scripts/check-browser.mjs",
+    "desktop": "node scripts/tauri.mjs dev",
+    "package": "node scripts/tauri.mjs build --bundles app",
+    "native:check": "node scripts/tauri.mjs check",
+    "test:wake": "python3 scripts/check-wake.py",
+    "native:test": "node scripts/tauri.mjs test"
+  },
+  "dependencies": {
+    "@iris/contracts": "*",
+    "@iris/design-tokens": "*",
+    "@iris/galaxy-engine": "*",
+    "@tauri-apps/api": "2.12.4",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "three": "0.187.0",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "2.12.4",
+    "@types/node": "26.6.6",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@types/three": "0.187.0",
+    "playwright": "1.62.1",
+    "prettier": "3.10.1",
+    "typescript": "7.0.2",
+    "vite": "8.3.8",
+    "vitest": "5.1.0"
+  },
+  "engines": {
+    "node": ">=24.21.0"
+  },
+  "description": "A voice-first desktop assistant prototype with a reactive galaxy interface and scoped AI specialists."
+}

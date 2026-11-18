@@ -1,0 +1,19 @@
+{
+  "checks": [
+    "one context across modes",
+    "three selectable specialists",
+    "close and restore widgets",
+    "keyboard move and resize",
+    "native-only credential entry and rendering settings",
+    "layout persistence",
+    "offscreen recovery",
+    "layout reset and immersive mode",
+    "WebGL context loss and restoration",
+    "ten renderer teardown cycles",
+    "six labeled demo states"
+  ],
+  "errors": [],
+  "viewport": "1440 × 960",
+  "browser": "151.0.7922.34",
+  "note": "Headless browser checks do not establish native audio, provider, Keychain, or M3 Pro frame-rate acceptance."
+}

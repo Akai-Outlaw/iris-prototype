@@ -1,0 +1,12 @@
+{
+  "historicalDate": "2026-11-12",
+  "providerRoundTrip": {
+    "ttsSucceeded": true,
+    "sttSucceeded": true,
+    "sampleRate": 24000,
+    "seconds": 6.130083333333333
+  },
+  "physicalVoiceLoop": "Owner reported success before the Iris rename",
+  "heyIrisPhysicalTest": "Pending after rename",
+  "rawAudioAndCredentialsPublished": false
+}

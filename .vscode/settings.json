@@ -1,0 +1,19 @@
+{
+  "files.exclude": {
+    "**/node_modules": true,
+    ".toolchains": true,
+    ".local": true,
+    "**/target": true,
+    "**/dist": true,
+    "**/__pycache__": true,
+    "outputs": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    ".toolchains": true,
+    ".local": true,
+    "**/target": true,
+    "**/dist": true,
+    "outputs": true
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "product": "Iris Prototype",
+  "bundle": "apps/desktop/src-tauri/target/release/bundle/macos/Iris Prototype.app",
+  "sourceMatchesBundle": {
+    "bridge.py": true,
+    "policy.py": true,
+    "shaderLicense": true
+  },
+  "nativeUi": "Not visually inspected by automation",
+  "physicalHeyIrisTest": "Pending after rename"
+}

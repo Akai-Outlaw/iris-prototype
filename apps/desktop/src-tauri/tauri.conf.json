@@ -1,0 +1,41 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Iris Prototype",
+  "version": "0.1.0",
+  "identifier": "dev.akai.omni",
+  "build": {
+    "beforeDevCommand": "npm run dev --prefix ../..",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build --prefix ../..",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "Iris Prototype \u00b7 Living Galaxy",
+        "width": 1440,
+        "height": 960,
+        "minWidth": 900,
+        "minHeight": 640,
+        "backgroundColor": "#050915"
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; media-src 'self' blob:; connect-src ipc: http://ipc.localhost; object-src 'none'; frame-src 'none'; base-uri 'self'"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["app"],
+    "icon": ["icons/icon.icns", "icons/icon.png"],
+    "resources": {
+      "../../../services/iris-runtime/*.py": "runtime/",
+      "../../../packages/galaxy-engine/LICENSE.simplex.txt": "licenses/LICENSE.simplex.txt",
+      "../../../.local/native/libIrisWake.dylib": "native/libIrisWake.dylib"
+    },
+    "macOS": {
+      "minimumSystemVersion": "13.0",
+      "infoPlist": "Info.plist"
+    }
+  }
+}
